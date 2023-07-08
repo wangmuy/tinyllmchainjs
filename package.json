@@ -1,0 +1,42 @@
+{
+  "name": "tinylangchainjs",
+  "packageManager": "yarn@3.6.1",
+  "description": "tiny langchainjs",
+  "type": "module",
+  "main": "src/index.ts",
+  "files": [
+    "schema.ts"
+  ],
+  "scripts": {
+    "build": "yarn build:esm",
+    "build:esm": "tsc --outDir dist/",
+    "start": "node ./dist/index.js",
+    "bundle": "node ./esbuild.config.js"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@types/decamelize": "^3.0.3",
+    "@types/object-hash": "^3.0.2",
+    "@types/uuid": "^9.0.2",
+    "axios": "^0.26.0",
+    "esbuild": "^0.18.11",
+    "http-server": "^14.1.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "camelcase": "^7.0.1",
+    "decamelize": "^6.0.0",
+    "https-proxy-agent": "^7.0.0",
+    "js-tiktoken": "^1.0.7",
+    "net": "^1.0.2",
+    "object-hash": "^3.0.0",
+    "openai": "^3.3.0",
+    "p-queue": "^6.6.2",
+    "p-retry": "4",
+    "tls": "^0.0.1",
+    "uuid": "^9.0.0",
+    "zod": "^3.21.4"
+  }
+}
