@@ -11,7 +11,7 @@ Besides, a tiny core excerpt from LangChain.js may be run on a smaller/embedded 
 * [NativeScript](https://github.com/NativeScript/NativeScript)
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * [txiki.js](https://github.com/saghul/txiki.js)
-* [krane](https://github.com/openkraken/kraken)
+* [kraken](https://github.com/openkraken/kraken)
 * Ultimately on IoT devices...
 
 ## Quickstart
