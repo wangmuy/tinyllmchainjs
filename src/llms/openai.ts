@@ -9,7 +9,7 @@ import fetchAdapter from "../util/axios-fetch-adapter.js";
 import { StreamingAxiosConfiguration } from "../util/axios-types.js";
 import { isNode } from "../util/env.js";
 import { OpenAIChat } from "./openai-chat.js";
-import { HttpsProxyAgent } from "https-proxy-agent";
+// import { HttpsProxyAgent } from "https-proxy-agent";
 import {
   Configuration,
   ConfigurationParameters,
@@ -335,14 +335,14 @@ export class OpenAI extends BaseLLM implements OpenAIInput {
       });
       this.client = new OpenAIApi(clientConfig);
     }
-    const proxy = new HttpsProxyAgent("http://127.0.0.1:1091")
+    // const proxy = new HttpsProxyAgent("http://127.0.0.1:1091")
     const axiosOptions = {
       adapter: isNode() ? undefined : fetchAdapter,
       ...this.clientConfig.baseOptions,
       ...options,
-      proxy: false, httpAgent: proxy, httpsAgent: proxy
+      // proxy: false, httpAgent: proxy, httpsAgent: proxy
     } as StreamingAxiosConfiguration;
-    console.log(`axiosdebug openai clientConfig=${JSON.stringify(axiosOptions)}`)
+    // console.log(`axiosdebug openai clientConfig=${JSON.stringify(axiosOptions)}`)
     return this.caller
       .call(
         this.client.createCompletion.bind(this.client),

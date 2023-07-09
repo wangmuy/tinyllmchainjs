@@ -1,5 +1,5 @@
 import { OpenAI } from "./llms/openai.js";
-import { HttpsProxyAgent } from "https-proxy-agent";
+// import { HttpsProxyAgent } from "https-proxy-agent";
 
 const OPENAI_API_KEY = "sk-";
 
