@@ -5,15 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@esbuild-plugins/node-globals-polyfill@npm:^0.2.3":
-  version: 0.2.3
-  resolution: "@esbuild-plugins/node-globals-polyfill@npm:0.2.3"
-  peerDependencies:
-    esbuild: "*"
-  checksum: f83eeaa382680b26a3b1cf6c396450332c41d2dc0f9fd935d3f4bacf5412bef7383d2aeb4246a858781435b7c005a570dadc81051f8a038f1ef2111f17d3d8b0
-  languageName: node
-  linkType: hard
-
 "@esbuild-plugins/node-modules-polyfill@npm:^0.2.2":
   version: 0.2.2
   resolution: "@esbuild-plugins/node-modules-polyfill@npm:0.2.2"
@@ -1020,7 +1011,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tinylangchainjs@workspace:."
   dependencies:
-    "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     "@types/decamelize": ^3.0.3
     "@types/object-hash": ^3.0.2

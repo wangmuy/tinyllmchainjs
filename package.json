@@ -14,7 +14,6 @@
     "bundle": "node ./esbuild.config.js"
   },
   "devDependencies": {
-    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@types/decamelize": "^3.0.3",
     "@types/object-hash": "^3.0.2",

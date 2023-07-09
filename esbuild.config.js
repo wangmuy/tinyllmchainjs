@@ -1,6 +1,5 @@
 import { build } from "esbuild";
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
-import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 
 build({
   entryPoints: ["src/index.ts"],
@@ -12,10 +11,5 @@ build({
   target: "ES2021",
   plugins: [
     NodeModulesPolyfillPlugin(),
-    NodeGlobalsPolyfillPlugin({
-      process: true,
-      buffer: true,
-      // define: { 'process.env.var': '"hello"' },
-    }),
   ]
 });
