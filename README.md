@@ -12,7 +12,7 @@ Besides, a tiny core excerpt from LangChain.js may be run on a smaller/embedded 
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * [txiki.js](https://github.com/saghul/txiki.js)
 * [krane](https://github.com/openkraken/kraken)
-Ultimately on IoT devices...
+* Ultimately on IoT devices...
 
 ## Quickstart
 ```bash
